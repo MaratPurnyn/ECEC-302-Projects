@@ -1,0 +1,25 @@
+“A process updates signals when it finishes interpreting the statements all the way to 
+the end process statement, it then goes back to suspend at begin statement, waiting 
+on sensitivity list signal events.”
+What is the sensitive signal(s) in my_reg process? What about in the previous 
+tutorials?
+
+the sensitive signal is the clock. in previous tutorials it was the enable switch.
+
+a) temp1 (z1 LEDs) should get new input vector x and temp2 (z2 LEDs) gets old temp1 
+when en button pressed, but it doesn’t do that, does it?
+No
+
+
+b) Do both new Z1 and Z2 equal to X when en button pressed?
+Yes
+
+
+c) What is the bug (erroneous from design specification)?
+Temp2 and Temp1 are the same so Z1 and Z2 are the same. This is because the assignments are interpreted concurrently.
+
+
+d) A Solution: Include the ability to single-step the clock that synchs the 
+hardware-under-test. This solution can provide a useful debugging utility. Below is 
+new cascading registers with A, B buttons and a module Step providing single-step 
+clock signal CK1 syncing the registers. The load enable port EN is now a switch.
