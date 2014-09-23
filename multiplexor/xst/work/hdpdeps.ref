@@ -1,0 +1,6 @@
+V3 3
+FL C:/Users/msp72/ecec302projects/multiplexor/mux.vhd 2014/09/23.10:16:39 P.20131013
+EN work/mux 1411481850 FL C:/Users/msp72/ecec302projects/multiplexor/mux.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/mux/beh 1411481851 \
+      FL C:/Users/msp72/ecec302projects/multiplexor/mux.vhd EN work/mux 1411481850
