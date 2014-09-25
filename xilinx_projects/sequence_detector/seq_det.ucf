@@ -1,0 +1,10 @@
+NET "ck" 		LOC = "B8";
+NET "x" 		   LOC = "P11";
+NET "led<3>" 	LOC = "G1";
+NET "led<2>" 	LOC = "P4";
+NET "led<1>" 	LOC = "N4";
+NET "led<0>" 	LOC = "N5";
+NET "z" 	 		LOC = "M5";
+NET "b1"  		LOC = "G12";
+NET "b2"  		LOC = "C11";
+NET "reset"  	LOC = "M4";

@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd 2014/09/25.11:57:57 P.20131013
+EN work/seq_det 1411660799 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/seq_det/beh 1411660800 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd \
+      EN work/seq_det 1411660799
