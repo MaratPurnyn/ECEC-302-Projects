@@ -1,0 +1,16 @@
+NET "ck" 		LOC = "B8";
+NET "en" 		LOC = "N3";
+NET "sw<1>" 	LOC = "P11";
+NET "sw<0>" 	LOC = "L3";
+NET "led<7>" 	LOC = "G1";
+NET "led<6>" 	LOC = "P4";
+NET "led<5>" 	LOC = "N4";
+NET "led<4>" 	LOC = "N5";
+NET "led<3>" 	LOC = "P6";
+NET "led<2>" 	LOC = "P7";
+NET "led<1>" 	LOC = "M11";
+NET "led<0>" 	LOC = "M5";
+NET "b4"  		LOC = "A7";
+NET "b3"  		LOC = "M4";
+NET "b2"  		LOC = "C11";
+NET "b1"  		LOC = "G12";
