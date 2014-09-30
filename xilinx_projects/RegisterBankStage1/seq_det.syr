@@ -1,0 +1,458 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: seq_det.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "seq_det.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "seq_det"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : seq_det
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd" in Library work.
+Architecture beh of Entity seq_det is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <seq_det> in library <work> (architecture <beh>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <seq_det> in library <work> (Architecture <beh>).
+Entity <seq_det> analyzed. Unit <seq_det> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <seq_det>.
+    Related source file is "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd".
+    Register <temp0> equivalent to <led<0>> has been removed
+    Register <temp1> equivalent to <led<1>> has been removed
+    Register <temp2> equivalent to <led<2>> has been removed
+    Found finite state machine <FSM_0> for signal <n_s>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 10                                             |
+    | Inputs             | 1                                              |
+    | Outputs            | 5                                              |
+    | Clock              | EN                        (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | s0                                             |
+    | Power Up State     | s0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <d_n_s>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 1                                              |
+    | Clock              | ck                        (rising_edge)        |
+    | Power Up State     | rdy                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <z>.
+    Found 4-bit register for signal <led>.
+    Found 1-bit register for signal <EN>.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred   6 D-type flip-flop(s).
+Unit <seq_det> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 6
+ 1-bit register                                        : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <d_n_s/FSM> on signal <d_n_s[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ rdy     | 00
+ pulse   | 01
+ not_rdy | 10
+---------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <n_s/FSM> on signal <n_s[1:5]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ s0    | 00001
+ s1    | 00010
+ s2    | 00100
+ s3    | 01000
+ s4    | 10000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Registers                                            : 6
+ Flip-Flops                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <seq_det> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block seq_det, actual ratio is 0.
+FlipFlop led_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <seq_det> :
+	Found 2-bit shift register for signal <led_1>.
+Unit <seq_det> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 12
+ Flip-Flops                                            : 12
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : seq_det.ngr
+Top Level Output File Name         : seq_det
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 10
+
+Cell Usage :
+# BELS                             : 8
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 5
+#      LUT4                        : 1
+# FlipFlops/Latches                : 13
+#      FD                          : 5
+#      FDE                         : 1
+#      FDR                         : 5
+#      FDS                         : 1
+#      FDSE                        : 1
+# Shift Registers                  : 1
+#      SRL16                       : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 4
+#      OBUF                        : 5
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        7  out of    960     0%  
+ Number of Slice Flip Flops:             12  out of   1920     0%  
+ Number of 4 input LUTs:                  8  out of   1920     0%  
+    Number used as logic:                 7
+    Number used as Shift registers:       1
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of     83    12%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ck                                 | BUFGP                  | 3     |
+EN                                 | NONE(z)                | 11    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.014ns (Maximum Frequency: 249.128MHz)
+   Minimum input arrival time before clock: 3.566ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ck'
+  Clock period: 2.102ns (frequency: 475.737MHz)
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Delay:               2.102ns (Levels of Logic = 1)
+  Source:            d_n_s_FSM_FFd1 (FF)
+  Destination:       d_n_s_FSM_FFd2 (FF)
+  Source Clock:      ck rising
+  Destination Clock: ck rising
+
+  Data Path: d_n_s_FSM_FFd1 to d_n_s_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDSE:C->Q             1   0.591   0.499  d_n_s_FSM_FFd1 (d_n_s_FSM_FFd1)
+     LUT2:I1->O            1   0.704   0.000  d_n_s_FSM_FFd2-In11 (d_n_s_FSM_FFd2-In1)
+     FDR:D                     0.308          d_n_s_FSM_FFd2
+    ----------------------------------------
+    Total                      2.102ns (1.603ns logic, 0.499ns route)
+                                       (76.3% logic, 23.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'EN'
+  Clock period: 4.014ns (frequency: 249.128MHz)
+  Total number of paths / destination ports: 11 / 9
+-------------------------------------------------------------------------
+Delay:               4.014ns (Levels of Logic = 0)
+  Source:            Mshreg_led_1 (FF)
+  Destination:       led_1 (FF)
+  Source Clock:      EN rising
+  Destination Clock: EN rising
+
+  Data Path: Mshreg_led_1 to led_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16:CLK->Q          1   3.706   0.000  Mshreg_led_1 (Mshreg_led_1)
+     FD:D                      0.308          led_1
+    ----------------------------------------
+    Total                      4.014ns (4.014ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'EN'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              3.566ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       z (FF)
+  Destination Clock: EN rising
+
+  Data Path: reset to z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.669  reset_IBUF (reset_IBUF)
+     INV:I->O              1   0.704   0.420  reset_inv1_INV_0 (reset_inv)
+     FDE:CE                    0.555          z
+    ----------------------------------------
+    Total                      3.566ns (2.477ns logic, 1.089ns route)
+                                       (69.5% logic, 30.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ck'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              2.825ns (Levels of Logic = 2)
+  Source:            b1 (PAD)
+  Destination:       d_n_s_FSM_FFd2 (FF)
+  Destination Clock: ck rising
+
+  Data Path: b1 to d_n_s_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.595  b1_IBUF (b1_IBUF)
+     LUT2:I0->O            1   0.704   0.000  d_n_s_FSM_FFd2-In11 (d_n_s_FSM_FFd2-In1)
+     FDR:D                     0.308          d_n_s_FSM_FFd2
+    ----------------------------------------
+    Total                      2.825ns (2.230ns logic, 0.595ns route)
+                                       (78.9% logic, 21.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'EN'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            led_2 (FF)
+  Destination:       led<2> (PAD)
+  Source Clock:      EN rising
+
+  Data Path: led_2 to led<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.447  led_2 (led_2)
+     OBUF:I->O                 3.272          led_2_OBUF (led<2>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.66 secs
+ 
+--> 
+
+Total memory usage is 257532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
