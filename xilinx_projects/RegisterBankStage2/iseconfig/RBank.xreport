@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-09-30T11:02:24</DateModified>
+  <DateModified>2014-10-07T09:02:31</DateModified>
   <ModuleName>RBank</ModuleName>
   <SummaryTimeStamp>2014-09-30T11:01:27</SummaryTimeStamp>
   <SavedFilePath>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage2/iseconfig/RBank.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage2</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage2\</ImplementationReportsDirectory>
   <DateInitialized>2014-09-30T10:45:03</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
