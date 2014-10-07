@@ -1,0 +1,74 @@
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+bitgen -intstyle ise -f seq_det.ut seq_det.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+bitgen -intstyle ise -f seq_det.ut seq_det.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+bitgen -intstyle ise -f seq_det.ut seq_det.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+bitgen -intstyle ise -f seq_det.ut seq_det.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc seq_det.ucf -p xc3s100e-cp132-4 seq_det.ngc seq_det.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o seq_det_map.ncd seq_det.ngd seq_det.pcf 
+par -w -intstyle ise -ol high -t 1 seq_det_map.ncd seq_det.ncd seq_det.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml seq_det.twx seq_det.ncd -o seq_det.twr seq_det.pcf -ucf seq_det.ucf 
+bitgen -intstyle ise -f seq_det.ut seq_det.ncd 

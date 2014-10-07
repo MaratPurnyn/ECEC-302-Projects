@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Sep 25 12:00:10 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "ck" LOCATE = SITE "B8" LEVEL 1;
+COMP "led<0>" LOCATE = SITE "N5" LEVEL 1;
+COMP "z" LOCATE = SITE "M5" LEVEL 1;
+COMP "led<1>" LOCATE = SITE "N4" LEVEL 1;
+COMP "led<2>" LOCATE = SITE "P4" LEVEL 1;
+COMP "led<3>" LOCATE = SITE "G1" LEVEL 1;
+COMP "x" LOCATE = SITE "P11" LEVEL 1;
+COMP "b1" LOCATE = SITE "G12" LEVEL 1;
+COMP "b2" LOCATE = SITE "C11" LEVEL 1;
+COMP "reset" LOCATE = SITE "M4" LEVEL 1;
+NET "ck_BUFGP/IBUFG" BEL "ck_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

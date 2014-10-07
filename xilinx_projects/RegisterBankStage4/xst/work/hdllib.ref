@@ -1,0 +1,8 @@
+AR reg_v3 beh C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage3/RBankS1.vhd sub00/vhpl07 1412689610
+EN seq_det NULL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd sub00/vhpl00 1411660799
+EN reg_v3 NULL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage3/RBankS1.vhd sub00/vhpl06 1412689609
+AR seq_det beh C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/sequence_detector/seq_det.vhd sub00/vhpl01 1411660800
+EN rbanks1 NULL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage1/RBankS1.vhd sub00/vhpl02 1412085262
+EN rbank NULL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage2/RBankS1.vhd sub00/vhpl04 1412089520
+AR rbanks1 beh C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage1/RBankS1.vhd sub00/vhpl03 1412085263
+AR rbank beh C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage2/RBankS1.vhd sub00/vhpl05 1412089521
