@@ -1,12 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
+<<<<<<< HEAD
   <DateModified>2014-10-14T09:17:34</DateModified>
   <ModuleName>reg_v4</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage4/iseconfig/reg_v4.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage4</ImplementationReportsDirectory>
   <DateInitialized>2014-10-14T09:17:34</DateInitialized>
+=======
+  <DateModified>2014-10-09T10:02:42</DateModified>
+  <ModuleName>reg_v4</ModuleName>
+  <SummaryTimeStamp>2014-10-09T09:59:33</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/msp72/Documents/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage4/iseconfig/reg_v4.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/msp72/Documents/GitHub/ECEC-302-Projects/xilinx_projects/RegisterBankStage4</ImplementationReportsDirectory>
+  <DateInitialized>2014-10-09T09:13:42</DateInitialized>
+>>>>>>> origin/master
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
