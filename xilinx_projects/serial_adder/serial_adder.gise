@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1413295191" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1413295191">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1413295191" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7026877547453901197" xil_pn:start_ts="1413295191">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -105,6 +106,7 @@
     <transform xil_pn:end_ts="1413295197" xil_pn:in_ck="-2607989033883502577" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4624975459267360487" xil_pn:start_ts="1413295191">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -127,6 +129,7 @@
     <transform xil_pn:end_ts="1413295202" xil_pn:in_ck="3764098743259230992" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1402710519234976835" xil_pn:start_ts="1413295197">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="serial_adder.bld"/>
@@ -136,6 +139,7 @@
     <transform xil_pn:end_ts="1413295205" xil_pn:in_ck="-61230351953963759" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1413295202">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="serial_adder.pcf"/>
       <outfile xil_pn:name="serial_adder_map.map"/>
@@ -149,6 +153,7 @@
     <transform xil_pn:end_ts="1413295213" xil_pn:in_ck="-2218486872744415574" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1413295205">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="serial_adder.ncd"/>
       <outfile xil_pn:name="serial_adder.pad"/>
@@ -163,6 +168,8 @@
     <transform xil_pn:end_ts="1413295222" xil_pn:in_ck="-2607989033883511454" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="5775731546441462550" xil_pn:start_ts="1413295213">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="serial_adder.bgn"/>
       <outfile xil_pn:name="serial_adder.bit"/>
@@ -175,6 +182,7 @@
     <transform xil_pn:end_ts="1413295213" xil_pn:in_ck="6820120226029849741" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1413295210">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="serial_adder.twr"/>
       <outfile xil_pn:name="serial_adder.twx"/>
