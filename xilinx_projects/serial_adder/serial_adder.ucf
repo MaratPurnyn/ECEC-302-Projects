@@ -1,0 +1,13 @@
+NET "ck" LOC = "B8" ;
+NET "a" LOC = "L3" ;
+NET "b" LOC = "P11" ;
+NET "b1" LOC = "G12" ;
+NET "b2" LOC = "C11" ;
+NET "en" LOC = "N3" ;
+NET "cout" LOC = "G1" ;
+NET "done" LOC = "P4" ;
+NET "s(4)" LOC = "N5" ;
+NET "s(3)" LOC = "P6" ;
+NET "s(2)" LOC = "P7" ;
+NET "s(1)" LOC = "M11" ;
+NET "s(0)" LOC = "M5" ;

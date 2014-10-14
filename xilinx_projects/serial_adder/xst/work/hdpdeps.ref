@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/serial_adder/serial_adder.vhd 2014/10/14.09:59:48 P.20131013
+EN work/serial_adder 1413295193 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/serial_adder/serial_adder.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/serial_adder/behav 1413295194 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/serial_adder/serial_adder.vhd \
+      EN work/serial_adder 1413295193
