@@ -1,0 +1,424 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: blink.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "blink.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "blink"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : blink
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_blinking_led/blink.vhd" in Library work.
+Entity <blink> compiled.
+Entity <blink> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <blink> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <blink> in library <work> (Architecture <behavioral>).
+Entity <blink> analyzed. Unit <blink> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <blink>.
+    Related source file is "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_blinking_led/blink.vhd".
+    Found 1-bit register for signal <blink<0>>.
+    Found 1-bit register for signal <ck1>.
+    Found 32-bit comparator not equal for signal <ck1$cmp_ne0000> created at line 22.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count$addsub0000> created at line 25.
+    Found 32-bit comparator equal for signal <count$cmp_eq0000> created at line 22.
+    Found 32-bit 4-to-1 multiplexer for signal <count$mux0004>.
+    Found 24-bit register for signal <divider>.
+    Summary:
+	inferred  58 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <blink> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 4
+ 1-bit register                                        : 2
+ 24-bit register                                       : 1
+ 32-bit register                                       : 1
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <divider_0> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_1> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_2> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_3> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_4> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_5> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_7> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_8> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_9> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_11> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_13> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_19> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_21> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_22> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 58
+ Flip-Flops                                            : 58
+# Comparators                                          : 2
+ 32-bit comparator equal                               : 1
+ 32-bit comparator not equal                           : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <divider_0> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_1> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_2> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_3> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_4> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_5> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_7> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_8> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_9> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_11> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_13> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_19> has a constant value of 1 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_21> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <divider_22> has a constant value of 0 in block <blink>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <divider_14> in Unit <blink> is equivalent to the following 4 FFs/Latches, which will be removed : <divider_16> <divider_17> <divider_18> <blink_0> 
+INFO:Xst:2261 - The FF/Latch <divider_6> in Unit <blink> is equivalent to the following 5 FFs/Latches, which will be removed : <divider_10> <divider_12> <divider_15> <divider_20> <divider_23> 
+
+Optimizing unit <blink> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block blink, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 35
+ Flip-Flops                                            : 35
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : blink.ngr
+Top Level Output File Name         : blink
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 157
+#      GND                         : 1
+#      INV                         : 1
+#      LUT1                        : 31
+#      LUT2                        : 4
+#      LUT3                        : 4
+#      LUT3_D                      : 1
+#      LUT4                        : 40
+#      MUXCY                       : 42
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 35
+#      FD                          : 32
+#      FDE                         : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 3
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       44  out of    960     4%  
+ Number of Slice Flip Flops:             35  out of   1920     1%  
+ Number of 4 input LUTs:                 81  out of   1920     4%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of     83     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ck                                 | BUFGP                  | 35    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.392ns (Maximum Frequency: 156.457MHz)
+   Minimum input arrival time before clock: 5.745ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ck'
+  Clock period: 6.392ns (frequency: 156.457MHz)
+  Total number of paths / destination ports: 1854 / 38
+-------------------------------------------------------------------------
+Delay:               6.392ns (Levels of Logic = 13)
+  Source:            count_7 (FF)
+  Destination:       ck1 (FF)
+  Source Clock:      ck rising
+  Destination Clock: ck rising
+
+  Data Path: count_7 to ck1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  count_7 (count_7)
+     LUT4:I0->O            1   0.704   0.000  Mcompar_count_cmp_eq0000_lut<0> (Mcompar_count_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_count_cmp_eq0000_cy<0> (Mcompar_count_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<1> (Mcompar_count_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<2> (Mcompar_count_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<3> (Mcompar_count_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<4> (Mcompar_count_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<5> (Mcompar_count_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<6> (Mcompar_count_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<7> (Mcompar_count_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<8> (Mcompar_count_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_count_cmp_eq0000_cy<9> (Mcompar_count_cmp_eq0000_cy<9>)
+     MUXCY:CI->O          33   0.459   1.342  Mcompar_count_cmp_eq0000_cy<10> (Mcompar_count_cmp_eq0000_cy<10>)
+     LUT2:I1->O            1   0.704   0.420  ck1_not00011 (ck1_not0001)
+     FDE:CE                    0.555          ck1
+    ----------------------------------------
+    Total                      6.392ns (4.008ns logic, 2.384ns route)
+                                       (62.7% logic, 37.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ck'
+  Total number of paths / destination ports: 110 / 38
+-------------------------------------------------------------------------
+Offset:              5.745ns (Levels of Logic = 3)
+  Source:            reset (PAD)
+  Destination:       ck1 (FF)
+  Destination Clock: ck rising
+
+  Data Path: reset to ck1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            34   1.218   1.438  reset_IBUF (reset_IBUF)
+     LUT4:I0->O            3   0.704   0.706  divider_not00011 (divider_not0001)
+     LUT2:I0->O            1   0.704   0.420  ck1_not00011 (ck1_not0001)
+     FDE:CE                    0.555          ck1
+    ----------------------------------------
+    Total                      5.745ns (3.181ns logic, 2.564ns route)
+                                       (55.4% logic, 44.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ck'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            ck1 (FF)
+  Destination:       z (PAD)
+  Source Clock:      ck rising
+
+  Data Path: ck1 to z
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  ck1 (ck1)
+     OBUF:I->O                 3.272          z_OBUF (z)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.21 secs
+ 
+--> 
+
+Total memory usage is 257788 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   28 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

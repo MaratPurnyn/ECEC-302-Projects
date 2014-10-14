@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/Tut3/clockdivider.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_blinking_led/blink.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
