@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\msp72\GitHub\ECEC-302-Projects\xilinx_projects\hw2_runningLED\knight_rider.ncd
+OUTFILE=C:\Users\msp72\GitHub\ECEC-302-Projects\xilinx_projects\hw2_runningLED\knight_rider.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=C:\Users\msp72\GitHub\ECEC-302-Projects\xilinx_projects\hw2_runningLED
+LICENSE=ISE
+USER_INFO=210821937_1777496420_210570647_128

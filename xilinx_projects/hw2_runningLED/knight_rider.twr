@@ -1,0 +1,77 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr
+knight_rider.pcf -ucf blink.ucf
+
+Design file:              knight_rider.ncd
+Physical constraint file: knight_rider.pcf
+Device,package,speed:     xc6slx45,csg324,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock ck
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sel         |    6.693(R)|      SLOW  |   -2.605(R)|      FAST  |ck_BUFGP          |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock ck to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+z<0>        |        11.092(R)|      SLOW  |         4.819(R)|      FAST  |ck_BUFGP          |   0.000|
+z<1>        |        11.444(R)|      SLOW  |         5.000(R)|      FAST  |ck_BUFGP          |   0.000|
+z<2>        |        11.439(R)|      SLOW  |         5.001(R)|      FAST  |ck_BUFGP          |   0.000|
+z<3>        |        11.563(R)|      SLOW  |         5.091(R)|      FAST  |ck_BUFGP          |   0.000|
+z<4>        |        11.791(R)|      SLOW  |         5.194(R)|      FAST  |ck_BUFGP          |   0.000|
+z<5>        |        15.230(R)|      SLOW  |         7.237(R)|      FAST  |ck_BUFGP          |   0.000|
+z<6>        |        13.689(R)|      SLOW  |         6.354(R)|      FAST  |ck_BUFGP          |   0.000|
+z<7>        |        12.858(R)|      SLOW  |         5.765(R)|      FAST  |ck_BUFGP          |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock ck
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ck             |    5.114|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Thu Oct 16 10:52:50 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 262 MB
+
+
+

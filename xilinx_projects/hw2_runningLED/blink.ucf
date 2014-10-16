@@ -1,0 +1,23 @@
+#Atlys
+NET "ck" 	LOC = "L15";
+NET "sel"  	LOC = "E4";
+NET "z(7)" 	LOC = "N12";
+NET "z(6)" 	LOC = "P16";
+NET "z(5)" 	LOC = "D4";
+NET "z(4)" 	LOC = "M13";
+NET "z(3)" 	LOC = "L14";
+NET "z(2)" 	LOC = "N14";
+NET "z(1)" 	LOC = "M14";
+NET "z(0)" 	LOC = "U18";
+
+#Basys2
+#NET "ck" 	LOC = "B8";
+#NET "sel"  	LOC = "P11";
+#NET "z(7)" 	LOC = "G1";
+#NET "z(6)" 	LOC = "P4";
+#NET "z(5)" 	LOC = "N4";
+#NET "z(4)" 	LOC = "N5";
+#NET "z(3)" 	LOC = "P6";
+#NET "z(2)" 	LOC = "P7";
+#NET "z(1)" 	LOC = "M11";
+#NET "z(0)" 	LOC = "M5";

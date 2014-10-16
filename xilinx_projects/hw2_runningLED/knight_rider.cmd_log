@@ -1,0 +1,48 @@
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc3s100e-cp132-4 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+par -w -intstyle ise -ol high -t 1 knight_rider_map.ncd knight_rider.ncd knight_rider.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr knight_rider.pcf -ucf blink.ucf 
+bitgen -intstyle ise -f knight_rider.ut knight_rider.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc3s100e-cp132-4 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+par -w -intstyle ise -ol high -t 1 knight_rider_map.ncd knight_rider.ncd knight_rider.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr knight_rider.pcf -ucf blink.ucf 
+bitgen -intstyle ise -f knight_rider.ut knight_rider.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc3s100e-cp132-4 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+par -w -intstyle ise -ol high -t 1 knight_rider_map.ncd knight_rider.ncd knight_rider.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr knight_rider.pcf -ucf blink.ucf 
+bitgen -intstyle ise -f knight_rider.ut knight_rider.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc3s100e-cp132-4 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+par -w -intstyle ise -ol high -t 1 knight_rider_map.ncd knight_rider.ncd knight_rider.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr knight_rider.pcf -ucf blink.ucf 
+bitgen -intstyle ise -f knight_rider.ut knight_rider.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc6slx45-csg324-2 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw2_runningLED/knight_rider.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc blink.ucf -p xc6slx45-csg324-2 knight_rider.ngc knight_rider.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o knight_rider_map.ncd knight_rider.ngd knight_rider.pcf 
+par -w -intstyle ise -ol high -mt off knight_rider_map.ncd knight_rider.ncd knight_rider.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml knight_rider.twx knight_rider.ncd -o knight_rider.twr knight_rider.pcf -ucf blink.ucf 
+bitgen -intstyle ise -f knight_rider.ut knight_rider.ncd 
