@@ -1,0 +1,61 @@
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc6slx45-csg324-2 OR_gate.ngc OR_gate.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc6slx45-csg324-2 OR_gate.ngc OR_gate.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc6slx45-csg324-2 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc6slx45-csg324-2 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc6slx45-csg324-2 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc6slx45-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -mt off OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf -ucf exam1.ucf 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OR_gate.ucf -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf -ucf OR_gate.ucf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OR_gate.ucf -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf -ucf OR_gate.ucf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/OR_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc OR_gate.ucf -p xc3s100e-cp132-4 OR_gate.ngc OR_gate.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o OR_gate_map.ncd OR_gate.ngd OR_gate.pcf 
+par -w -intstyle ise -ol high -t 1 OR_gate_map.ncd OR_gate.ncd OR_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml OR_gate.twx OR_gate.ncd -o OR_gate.twr OR_gate.pcf -ucf OR_gate.ucf 
+bitgen -intstyle ise -f OR_gate.ut OR_gate.ncd 

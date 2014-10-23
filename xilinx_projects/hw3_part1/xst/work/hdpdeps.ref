@@ -1,0 +1,8 @@
+V3 3
+FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/blink.vhd 2014/10/23.09:21:25 P.20131013
+EN work/OR_gate 1414070490 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/blink.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/OR_gate/Behavioral 1414070491 \
+      FL C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/hw3_part1/blink.vhd \
+      EN work/OR_gate 1414070490

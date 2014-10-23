@@ -1,0 +1,437 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: exam1.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "exam1.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "exam1"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : exam1
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : LUT
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/blink.vhd" in Library work.
+Entity <exam1> compiled.
+Entity <exam1> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <exam1> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <exam1> in library <work> (Architecture <behavioral>).
+Entity <exam1> analyzed. Unit <exam1> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <exam1>.
+    Related source file is "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/blink.vhd".
+    Found finite state machine <FSM_0> for signal <light>.
+    -----------------------------------------------------------------------
+    | States             | 8                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 39                                             |
+    | Clock              | ck                        (rising_edge)        |
+    | Clock enable       | light$cmp_eq0000          (positive)           |
+    | Power Up State     | t0                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit register for signal <z>.
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit register for signal <countDivider>.
+    Found 32-bit comparator equal for signal <light$cmp_eq0000> created at line 19.
+    Found 8-bit register for signal <temp>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 Counter(s).
+	inferred  48 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <exam1> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 3
+ 32-bit register                                       : 1
+ 8-bit register                                        : 2
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <light/FSM> on signal <light[1:8]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ t0    | 00000001
+ t1    | 00000010
+ t2    | 00000100
+ t3    | 00001000
+ t4    | 00010000
+ t5    | 00100000
+ t6    | 01000000
+ t7    | 10000000
+-------------------
+WARNING:Xst:1293 - FF/Latch <countDivider_0> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_1> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_2> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_3> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_4> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_5> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_6> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_27> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_28> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_29> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_30> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_31> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <temp_7> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <z_7> (without init value) has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 48
+ Flip-Flops                                            : 48
+# Comparators                                          : 1
+ 32-bit comparator equal                               : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <countDivider_6> in Unit <exam1> is equivalent to the following FF/Latch, which will be removed : <temp_7> 
+WARNING:Xst:1293 - FF/Latch <countDivider_0> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_1> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_2> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_3> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_4> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_5> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_6> has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_27> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_28> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_29> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_30> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <countDivider_31> has a constant value of 0 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <z_7> (without init value) has a constant value of 1 in block <exam1>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <countDivider_18> in Unit <exam1> is equivalent to the following FF/Latch, which will be removed : <countDivider_26> 
+INFO:Xst:2261 - The FF/Latch <countDivider_17> in Unit <exam1> is equivalent to the following FF/Latch, which will be removed : <countDivider_25> 
+INFO:Xst:2261 - The FF/Latch <countDivider_16> in Unit <exam1> is equivalent to the following FF/Latch, which will be removed : <countDivider_24> 
+INFO:Xst:2261 - The FF/Latch <countDivider_15> in Unit <exam1> is equivalent to the following FF/Latch, which will be removed : <countDivider_23> 
+
+Optimizing unit <exam1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block exam1, actual ratio is 4.
+
+Final Macro Processing ...
+
+Processing Unit <exam1> :
+	Found 2-bit shift register for signal <z_0>.
+	Found 2-bit shift register for signal <z_6>.
+Unit <exam1> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+# Shift Registers                                      : 2
+ 2-bit shift register                                  : 2
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : exam1.ngr
+Top Level Output File Name         : exam1
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 179
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 31
+#      LUT2                        : 23
+#      LUT2_D                      : 2
+#      LUT3                        : 8
+#      LUT4                        : 34
+#      MUXCY                       : 45
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 68
+#      FD                          : 29
+#      FDE                         : 36
+#      FDR                         : 3
+# Shift Registers                  : 2
+#      SRL16E                      : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 8
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       62  out of    960     6%  
+ Number of Slice Flip Flops:             68  out of   1920     3%  
+ Number of 4 input LUTs:                102  out of   1920     5%  
+    Number used as logic:               100
+    Number used as Shift registers:       2
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of     83    10%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+ck                                 | BUFGP                  | 70    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.610ns (Maximum Frequency: 131.411MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ck'
+  Clock period: 7.610ns (frequency: 131.411MHz)
+  Total number of paths / destination ports: 4258 / 111
+-------------------------------------------------------------------------
+Delay:               7.610ns (Levels of Logic = 17)
+  Source:            count_0 (FF)
+  Destination:       count_11 (FF)
+  Source Clock:      ck rising
+  Destination Clock: ck rising
+
+  Data Path: count_0 to count_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.591   0.622  count_0 (count_0)
+     LUT2:I0->O            1   0.704   0.000  Mcompar_light_cmp_eq0000_lut<0>1 (Mcompar_light_cmp_eq0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_light_cmp_eq0000_cy<0> (Mcompar_light_cmp_eq0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<1> (Mcompar_light_cmp_eq0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<2> (Mcompar_light_cmp_eq0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<3> (Mcompar_light_cmp_eq0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<4> (Mcompar_light_cmp_eq0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<5> (Mcompar_light_cmp_eq0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<6> (Mcompar_light_cmp_eq0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<7> (Mcompar_light_cmp_eq0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<8> (Mcompar_light_cmp_eq0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<9> (Mcompar_light_cmp_eq0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<10> (Mcompar_light_cmp_eq0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<11> (Mcompar_light_cmp_eq0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_light_cmp_eq0000_cy<12> (Mcompar_light_cmp_eq0000_cy<12>)
+     MUXCY:CI->O          12   0.459   0.996  Mcompar_light_cmp_eq0000_cy<13> (Mcompar_light_cmp_eq0000_cy<13>)
+     LUT3:I2->O           59   0.704   1.350  Mcompar_light_cmp_eq0000_cy<15>1 (Mcompar_light_cmp_eq0000_cy<15>)
+     LUT2:I1->O            1   0.704   0.000  count_11_rstpot (count_11_rstpot)
+     FD:D                      0.308          count_11
+    ----------------------------------------
+    Total                      7.610ns (4.642ns logic, 2.968ns route)
+                                       (61.0% logic, 39.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ck'
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            z_6 (FF)
+  Destination:       z<6> (PAD)
+  Source Clock:      ck rising
+
+  Data Path: z_6 to z<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.591   0.420  z_6 (z_6)
+     OBUF:I->O                 3.272          z_6_OBUF (z<6>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.00 secs
+ 
+--> 
+
+Total memory usage is 258236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   27 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

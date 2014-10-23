@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-09-23T10:04:29</DateModified>
+  <DateModified>2014-10-23T09:24:16</DateModified>
   <ModuleName>mux</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/msp72/ecec302projects/multiplexor/iseconfig/mux.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/msp72/ecec302projects/multiplexor</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/multiplexor/iseconfig/mux.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/multiplexor\</ImplementationReportsDirectory>
   <DateInitialized>2014-09-23T10:04:29</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

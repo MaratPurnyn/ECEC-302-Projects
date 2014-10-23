@@ -1,0 +1,60 @@
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
+xst -intstyle ise -ifn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.xst" -ofn "C:/Users/msp72/GitHub/ECEC-302-Projects/xilinx_projects/exam1/exam1.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc exam1.ucf -p xc3s100e-cp132-4 exam1.ngc exam1.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o exam1_map.ncd exam1.ngd exam1.pcf 
+par -w -intstyle ise -ol high -t 1 exam1_map.ncd exam1.ncd exam1.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml exam1.twx exam1.ncd -o exam1.twr exam1.pcf -ucf exam1.ucf 
+bitgen -intstyle ise -f exam1.ut exam1.ncd 
